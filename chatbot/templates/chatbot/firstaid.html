@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Chatbot</title>
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #cce0e5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Particle Background */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* Chatbox */
+        .chatbox {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            background: #f4f7f9;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Chat Bubbles */
+        .chat {
+            max-width: 80%;
+            padding: 12px;
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: 1.4;
+            word-wrap: break-word;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .chat.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .user {
+            background: #007bff;
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 2px;
+        }
+
+        .bot {
+            background: #e0f2fe;
+            color: #333;
+            align-self: flex-start;
+            border-bottom-left-radius: 2px;
+        }
+
+        /* Loader */
+        .loader {
+            display: none;
+            align-self: flex-start;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Input Section */
+        .input-section {
+            display: flex;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        input, select {
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 14px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <h1>First Aid Chatbot</h1>
+
+        <div class="chatbox" id="chatbox">
+            <!-- Chat messages appear here -->
+        </div>
+
+        <div class="input-section">
+            <select id="language">
+                <option value="en">English</option>
+                <option value="sw">Swahili</option>
+            </select>
+            <input type="text" id="keyword" placeholder="Type your issue...">
+            <button onclick="getFirstAid()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function getFirstAid() {
+            let keyword = document.getElementById("keyword").value.trim();
+            let language = document.getElementById("language").value;
+            let chatbox = document.getElementById("chatbox");
+
+            if (!keyword) return;
+
+            // Add user message
+            let userMessage = document.createElement("div");
+            userMessage.classList.add("chat", "user");
+            userMessage.textContent = keyword;
+            chatbox.appendChild(userMessage);
+            setTimeout(() => userMessage.classList.add("show"), 100);
+            document.getElementById("keyword").value = "";
+
+            // Show loader
+            let loader = document.createElement("div");
+            loader.classList.add("loader");
+            loader.textContent = "Typing...";
+            chatbox.appendChild(loader);
+            chatbox.scrollTop = chatbox.scrollHeight;
+
+            // Fetch response
+            fetch(`/first-aid/?keyword=${keyword}&language=${language}`)
+                .then(response => response.json())
+                .then(data => {
+                    loader.remove(); // Remove loader
+
+                    let botMessage = document.createElement("div");
+                    botMessage.classList.add("chat", "bot");
+                    botMessage.textContent = data.response ? data.response : "Sorry, no information found.";
+                    chatbox.appendChild(botMessage);
+                    setTimeout(() => botMessage.classList.add("show"), 100);
+                    chatbox.scrollTop = chatbox.scrollHeight;
+                })
+                .catch(() => {
+                    loader.remove();
+                    let errorMessage = document.createElement("div");
+                    errorMessage.classList.add("chat", "bot");
+                    errorMessage.textContent = "Error retrieving response. Please try again.";
+                    chatbox.appendChild(errorMessage);
+                    setTimeout(() => errorMessage.classList.add("show"), 100);
+                });
+        }
+    </script>
+
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 50 },
+                size: { value: 4 },
+                color: { value: "#007bff" },
+                opacity: { value: 0.5, random: true },
+                move: {
+                    speed: 2,
+                    direction: "top",
+                    out_mode: "out"
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
