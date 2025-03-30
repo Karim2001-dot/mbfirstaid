@@ -23,7 +23,7 @@ FIRST_AID_GUIDES = {
         "en": "For fainting , lay the person down and elevate their legs. Check for breathing and make sure they get fresh air. If they don't regain consciousness, call emergency services.",
         "sw": "Kwa kupoteza fahamu, mweke mtu chini na inua miguu yake. Hakikisha anapumua na anapata hewa safi. Ikiwa hafufuki haraka, piga simu kwa huduma za dharura."
     },
-    "kupoteza_fahamu": {
+    "kupoteza fahamu": {
         "en": "For fainting , lay the person down and elevate their legs. Check for breathing and make sure they get fresh air. If they don't regain consciousness, call emergency services.",
         "sw": "Kwa kupoteza fahamu, mweke mtu chini na inua miguu yake. Hakikisha anapumua na anapata hewa safi. Ikiwa hafufuki haraka, piga simu kwa huduma za dharura."
     },
@@ -91,11 +91,11 @@ FIRST_AID_GUIDES = {
         "en": "If poisoning (sumu) is suspected, try to identify the substance. Call a poison control center or emergency services immediately for advice and assistance.",
         "sw": "Ikiwa kuna sumu, jaribu kutambua kiini cha sumu. Piga simu kwa kituo cha kudhibiti sumu au huduma za dharura haraka kwa ushauri na msaada."
     },
-    "bee_sting": {
+    "bee sting": {
         "en": "For bee sting, remove the stinger if visible. Wash the area with soap and water. Apply a cold compress and use pain relievers if needed. Watch for allergic reactions.",
         "sw": "Kwa kuumwa na nyuki, ondoa mchomo ikiwa unaonekana. Osha eneo na sabuni na maji. Weka kitambaa baridi na tumia dawa za maumivu ikiwa inahitajika. Angalia dalili za mzio."
     },
-    "kuumwa_na_nyuki": {
+    "kuumwa na nyuki": {
         "en": "For bee sting, remove the stinger if visible. Wash the area with soap and water. Apply a cold compress and use pain relievers if needed. Watch for allergic reactions.",
         "sw": "Kwa kuumwa na nyuki, ondoa mchomo ikiwa unaonekana. Osha eneo na sabuni na maji. Weka kitambaa baridi na tumia dawa za maumivu ikiwa inahitajika. Angalia dalili za mzio."
     },
@@ -103,7 +103,7 @@ FIRST_AID_GUIDES = {
         "en": "For a sprain, use RICE (Rest, Ice, Compression, Elevation). Rest the injured area, apply ice for 20 minutes at a time, compress with a bandage, and elevate the limb. Seek medical help if severe.",
         "sw": "Kwa kuumwa na misuli, tumia RICE (Pumzika, Barafu, Benda, Inua). Pumzisha eneo lililojeruhiwa, weka barafu kwa dakika 20 kwa wakati mmoja, funika na bendeji, na inua kiungo. Tafuta msaada wa matibabu ikiwa ni mbaya."
     },
-    "kuumwa_na_misuli": {
+    "misuli": {
         "en": "For a sprain, use RICE (Rest, Ice, Compression, Elevation). Rest the injured area, apply ice for 20 minutes at a time, compress with a bandage, and elevate the limb. Seek medical help if severe.",
         "sw": "Kwa kuumwa na misuli, tumia RICE (Pumzika, Barafu, Benda, Inua). Pumzisha eneo lililojeruhiwa, weka barafu kwa dakika 20 kwa wakati mmoja, funika na bendeji, na inua kiungo. Tafuta msaada wa matibabu ikiwa ni mbaya."
     },
@@ -139,7 +139,7 @@ FIRST_AID_GUIDES = {
         "en": "For drowning, remove the person from the water if safe. Check for breathing and pulse. If absent, start CPR. Call emergency services immediately.",
         "sw": "Kwa kuzama, mtoe mtu kutoka kwenye maji ikiwa ni salama. Angalia kupumua na mapigo. Ikiwa hayapo, anza CPR. Piga simu kwa huduma za dharura mara moja."
     },
-    "electrical_shock": {
+    "electrical shock": {
         "en": "For electrical shock, turn off the power source if safe. Do not touch the person if they are still in contact with electricity. Check for breathing and pulse. Begin CPR if needed. Call emergency services.",
         "sw": "Kwa mshtuko wa umeme, zima chanzo cha umeme ikiwa ni salama. Usimshike mtu ikiwa bado anaunganishwa na umeme. Angalia kupumua na mapigo. Anza CPR ikiwa inahitajika. Piga simu kwa huduma za dharura."
     },
@@ -147,7 +147,7 @@ FIRST_AID_GUIDES = {
         "en": "For electrical shock, turn off the power source if safe. Do not touch the person if they are still in contact with electricity. Check for breathing and pulse. Begin CPR if needed. Call emergency services.",
         "sw": "Kwa mshtuko wa umeme, zima chanzo cha umeme ikiwa ni salama. Usimshike mtu ikiwa bado anaunganishwa na umeme. Angalia kupumua na mapigo. Anza CPR ikiwa inahitajika. Piga simu kwa huduma za dharura."
     },
-    "fire injury": {
+    "fire": {
         "en": "For fire injuries, extinguish flames if possible. Cool burns with water. Check for smoke inhalation. Call emergency services immediately.",
         "sw": "Kwa majeraha ya moto, zima moto ikiwa inawezekana. Poa majeraha na maji. Angalia kuvuta moshi. Piga simu kwa huduma za dharura mara moja."
     },
@@ -171,7 +171,7 @@ FIRST_AID_GUIDES = {
         "en": "For chemical exposure, remove contaminated clothing. Flush affected area with water. Identify the chemical if possible. Call poison control or emergency services.",
         "sw": "Kwa kukaribia kemikali, ondoa nguo zilizochafuliwa. Safisha eneo lililoathiriwa na maji. Tambua kemikali ikiwa inawezekana. Piga simu kwa kudhibiti sumu au huduma za dharura."
     },
-    "eye_injury": {
+    "eye injury": {
         "en": "For eye injury, do not rub the eye. Rinse with clean water if possible. Seek immediate medical attention, especially for chemical or penetrating injuries.",
         "sw": "Kwa jeraha la jicho, usisugue jicho. Suuza na maji safi ikiwa inawezekana. Tafuta matibabu mara moja, haswa kwa majeraha ya kemikali au kupenya."
     },
@@ -183,11 +183,11 @@ FIRST_AID_GUIDES = {
     "en": "For chemical burns, immediately rinse the affected area with plenty of water. Remove contaminated clothing and continue rinsing for at least 20 minutes. Seek medical attention immediately.",
     "sw": "Kwa michubuko ya kemikali, osha eneo lililoathiriwa kwa maji mengi mara moja. Ondoa mavazi yaliyoathiriwa na kemikali na endelea kuosha kwa angalau dakika 20. Tafuta matibabu haraka."
 },
-"majeraha_ya_kemikali": {
+"majeraha ya kemikali": {
     "en": "For chemical burns, immediately rinse the affected area with plenty of water. Remove contaminated clothing and continue rinsing for at least 20 minutes. Seek medical attention immediately.",
     "sw": "Kwa michubuko ya kemikali, osha eneo lililoathiriwa kwa maji mengi mara moja. Ondoa mavazi yaliyoathiriwa na kemikali na endelea kuosha kwa angalau dakika 20. Tafuta matibabu haraka."
 },
-"playground_injury": {
+"playground injury": {
     "en": "For playground injuries, clean the wound with soap and water, apply pressure to stop any bleeding, and cover with a clean bandage. If the injury is severe or there is a broken bone, seek immediate medical attention.",
     "sw": "Kwa majeraha ya uwanjani, osha jeraha na sabuni na maji, weka shinikizo kuzuia damu, na funika na bendeji safi. Ikiwa jeraha ni kubwa au kuna mvunjiko, tafuta matibabu haraka."
 },
