@@ -134,6 +134,66 @@
         button:hover {
             background: #0056b3;
         }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 15px;
+                max-width: 90%;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .chat {
+                font-size: 13px;
+            }
+
+            .input-section {
+                gap: 8px;
+            }
+
+            input, select {
+                font-size: 13px;
+                padding: 8px;
+            }
+
+            button {
+                font-size: 13px;
+                padding: 8px 12px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 10px;
+                max-width: 95%;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            .chat {
+                font-size: 12px;
+            }
+
+            .input-section {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            input, select {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            button {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+        }
     </style>
 </head>
 <body>
