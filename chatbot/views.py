@@ -60,11 +60,11 @@ FIRST_AID_GUIDES = {
         "sw": "Ikiwa mtu anapata shambulio la pumu, msaidia kutumia inhaler yake. Mhimiza kubaki mtulivu na tafuta msaada wa matibabu haraka ikiwa dalili haziepukiki."
     },
     "seizure": {
-        "en": "If someone has a seizure (kifafa), make sure they are in a safe place, clear any nearby objects, and place a cushion or cloth under their head. Afterward, call for medical help.",
+        "en": "If someone has a seizure , make sure they are in a safe place, clear any nearby objects, and place a cushion or cloth under their head. Afterward, call for medical help.",
         "sw": "Ikiwa mtu ana kifafa, hakikisha yuko mahali salama, ondolea vitu vilivyo karibu, na weka shingo au kitambaa chini ya kichwa chake. Baada ya kifafa, piga simu kwa msaada wa matibabu."
     },
     "kifafa": {
-        "en": "If someone has a seizure (kifafa), make sure they are in a safe place, clear any nearby objects, and place a cushion or cloth under their head. Afterward, call for medical help.",
+        "en": "If someone has a seizure , make sure they are in a safe place, clear any nearby objects, and place a cushion or cloth under their head. Afterward, call for medical help.",
         "sw": "Ikiwa mtu ana kifafa, hakikisha yuko mahali salama, ondolea vitu vilivyo karibu, na weka shingo au kitambaa chini ya kichwa chake. Baada ya kifafa, piga simu kwa msaada wa matibabu."
     },
     "choking": {
@@ -105,7 +105,7 @@ FIRST_AID_GUIDES = {
     },
     "misuli": {
         "en": "For a sprain, use RICE (Rest, Ice, Compression, Elevation). Rest the injured area, apply ice for 20 minutes at a time, compress with a bandage, and elevate the limb. Seek medical help if severe.",
-        "sw": "Kwa kuumwa na misuli, tumia RICE (Pumzika, Barafu, Benda, Inua). Pumzisha eneo lililojeruhiwa, weka barafu kwa dakika 20 kwa wakati mmoja, funika na bendeji, na inua kiungo. Tafuta msaada wa matibabu ikiwa ni mbaya."
+        "sw": "Kwa kuumwa na misuli, tumia PBBI (Pumzika, Barafu, Benda, Inua). Pumzisha eneo lililojeruhiwa, weka barafu kwa dakika 20 kwa wakati mmoja, funika na bendeji, na inua kiungo. Tafuta msaada wa matibabu ikiwa ni mbaya."
     },
     "heatstroke": {
         "en": "For heatstroke, move the person to a cool place, remove excess clothing, and cool them with water or ice packs. Seek immediate medical attention.",
@@ -119,7 +119,7 @@ FIRST_AID_GUIDES = {
         "en": "For a cut, wash the wound with soap and water, apply pressure to stop bleeding, and cover with a clean bandage. Seek medical help if the cut is deep or bleeding doesn't stop.",
         "sw": "Kwa jeraha la kukatwa, osha jeraha na sabuni na maji, weka shinikizo ili kuzuia damu, na funika na bendeji safi. Tafuta msaada wa matibabu ikiwa jeraha ni kubwa au damu haikomi."
     },
-    "jeraha_la_kukata": {
+    "jeraha la kukata": {
         "en": "For a cut, wash the wound with soap and water, apply pressure to stop bleeding, and cover with a clean bandage. Seek medical help if the cut is deep or bleeding doesn't stop.",
         "sw": "Kwa jeraha la kukatwa, osha jeraha na sabuni na maji, weka shinikizo ili kuzuia damu, na funika na bendeji safi. Tafuta msaada wa matibabu ikiwa jeraha ni kubwa au damu haikomi."
     },
@@ -127,7 +127,7 @@ FIRST_AID_GUIDES = {
         "en": "In a traffic accident, ensure safety first. Call emergency services immediately. Do not move injured persons unless in immediate danger. Provide comfort and support until help arrives.",
         "sw": "Katika ajali ya barabarani, hakikisha usalama kwanza. Piga simu kwa huduma za dharura mara moja. Usimhamishe mtu aliyejeruhiwa isipokuwa yuko katika hatari ya moja kwa moja. Toa faraja na msaada hadi msaada ufike."
     },
-    "ajali_ya_barabarani": {
+    "ajali ya barabarani": {
         "en": "In a traffic accident, ensure safety first. Call emergency services immediately. Do not move injured persons unless in immediate danger. Provide comfort and support until help arrives.",
         "sw": "Katika ajali ya barabarani, hakikisha usalama kwanza. Piga simu kwa huduma za dharura mara moja. Usimhamishe mtu aliyejeruhiwa isipokuwa yuko katika hatari ya moja kwa moja. Toa faraja na msaada hadi msaada ufike."
     },
@@ -179,7 +179,7 @@ FIRST_AID_GUIDES = {
         "en": "For eye injury, do not rub the eye. Rinse with clean water if possible. Seek immediate medical attention, especially for chemical or penetrating injuries.",
         "sw": "Kwa jeraha la jicho, usisugue jicho. Suuza na maji safi ikiwa inawezekana. Tafuta matibabu mara moja, haswa kwa majeraha ya kemikali au kupenya."
     },
-    "chemical_burn": {
+    "chemical burn": {
     "en": "For chemical burns, immediately rinse the affected area with plenty of water. Remove contaminated clothing and continue rinsing for at least 20 minutes. Seek medical attention immediately.",
     "sw": "Kwa michubuko ya kemikali, osha eneo lililoathiriwa kwa maji mengi mara moja. Ondoa mavazi yaliyoathiriwa na kemikali na endelea kuosha kwa angalau dakika 20. Tafuta matibabu haraka."
 },
@@ -191,11 +191,11 @@ FIRST_AID_GUIDES = {
     "en": "For playground injuries, clean the wound with soap and water, apply pressure to stop any bleeding, and cover with a clean bandage. If the injury is severe or there is a broken bone, seek immediate medical attention.",
     "sw": "Kwa majeraha ya uwanjani, osha jeraha na sabuni na maji, weka shinikizo kuzuia damu, na funika na bendeji safi. Ikiwa jeraha ni kubwa au kuna mvunjiko, tafuta matibabu haraka."
 },
-"majeraha_ya_uwanjani": {
+"majeraha ya uwanjani": {
     "en": "For playground injuries, clean the wound with soap and water, apply pressure to stop any bleeding, and cover with a clean bandage. If the injury is severe or there is a broken bone, seek immediate medical attention.",
     "sw": "Kwa majeraha ya uwanjani, osha jeraha na sabuni na maji, weka shinikizo kuzuia damu, na funika na bendeji safi. Ikiwa jeraha ni kubwa au kuna mvunjiko, tafuta matibabu haraka."
 },
-"laboratory_exposure": {
+"laboratory exposure": {
     "en": "In case of laboratory exposure to harmful substances, immediately remove the affected person from the area, rinse their skin with water for at least 15 minutes, and seek medical help. If eyes are affected, rinse with water for at least 20 minutes.",
     "sw": "Ikiwa mtu ameathiriwa na kemikali au vitu vyenye madhara katika maabara, mtoe mtu huyo haraka kutoka kwenye eneo hilo, osha ngozi yake kwa maji kwa angalau dakika 15, na tafuta msaada wa matibabu. Ikiwa macho yametibiwa, osha kwa maji kwa angalau dakika 20."
 },
