@@ -76,6 +76,12 @@
             background-color: #600000; /* Darker Red */
             transform: translateY(-3px);
         }
+        .logo {
+    max-width: 120px; /* Adjust size */
+    display: block;
+    margin: 0 auto 15px; /* Center and add spacing */
+}
+
     </style>
 </head>
 <body>
@@ -84,6 +90,7 @@
     <div id="particles-js"></div>
 
     <div class="container">
+        <img src="{% static 'images/logo.jpg' %}" alt="Mbonea School Logo" class="logo">
         <h1>Welcome to Mbonea School First Aid Guide!</h1>
         <p>Get help with first aid for school-related emergencies.</p>
         <a href="{% url 'first_aid_page' %}" class="btn">Go to First Aid Guide</a>

@@ -39,7 +39,7 @@ FIRST_AID_GUIDES = {
         "en": "If the person has a head injury , apply a cold compress and monitor for symptoms such as dizziness or nausea. If symptoms persist, seek medical attention immediately.",
         "sw": "Ikiwa mtu ameumia kichwa, weka kitambaa baridi na angalia dalili kama vile kizunguzungu au kichefuchefu. Ikiwa dalili haziepukiki, tafuta matibabu haraka."
     },
-    "jeraha_la_kichwa": {
+    "jeraha la kichwa": {
         "en": "If the person has a head injury , apply a cold compress and monitor for symptoms such as dizziness or nausea. If symptoms persist, seek medical attention immediately.",
         "sw": "Ikiwa mtu ameumia kichwa, weka kitambaa baridi na angalia dalili kama vile kizunguzungu au kichefuchefu. Ikiwa dalili haziepukiki, tafuta matibabu haraka."
     },
@@ -292,7 +292,7 @@ KEYWORD_VARIATIONS = {
     "ingestion": "poisoning",
     "wasp sting": "bee_sting",
     "insect sting": "bee_sting",
-    "stings": "bee_sting",
+    "sting": "bee_sting",
     "stung": "bee_sting",
     "sprained": "sprain",
     "twisted ankle": "sprain",
@@ -359,7 +359,7 @@ KEYWORD_VARIATIONS = {
     "kukosa_pumzi":"choking",
     "kutokwa_na_damu_nyingi":"damu_nyingi",
     "damu_kutoka":"damu_nyingi",
-    "sumu_kali":"sumu",
+    "sumu":"sumu",
     "kuumwa_na_wadudu":"kuumwa_na_nyuki",
     "misuli_kuumia":"kuumwa_na_misuli",
     "jeraha_la_misuli":"kuumwa_na_misuli",
@@ -373,9 +373,9 @@ KEYWORD_VARIATIONS = {
     "umeme_kuingia":"mshtuko_wa_umeme",
     "kupigwa_umeme":"mshtuko_wa_umeme",
     "kuungua_na_moto":"majeraha_ya_moto",
-    "kuumwa_mnyama":"kuumwa_na_mnyama",
+    "kuumwa mnyama":"kuumwa_na_mnyama",
     "kuathiriwa_na_kemikali":"kukabiliwa_na_kemikali",
-    "kuumizwa_jicho":"jeraha_la_jicho"
+    "jicho":"jeraha_la_jicho"
 }
 
 def get_first_aid_response(request):
